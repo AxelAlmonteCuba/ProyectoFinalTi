@@ -25,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mAuth = FirebaseAuth.getInstance();
+        //TI
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
