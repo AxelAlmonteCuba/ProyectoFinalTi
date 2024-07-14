@@ -53,7 +53,7 @@ public class HomeFragment extends Fragment {
         TextView txtNameHome = view.findViewById(R.id.txtNamehome);
         String correo = getActivity().getIntent().getStringExtra("correo");
         String nombres = getActivity().getIntent().getStringExtra("nombres");
-        txtNameHome.setText("Bienvenido "+nombres+" al");
+        txtNameHome.setText("Bienvenido "+nombres+" a la app de");
         return view;
     }
 }
