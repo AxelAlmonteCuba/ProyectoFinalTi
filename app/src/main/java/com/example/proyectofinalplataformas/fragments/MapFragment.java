@@ -1,13 +1,17 @@
 package com.example.proyectofinalplataformas.fragments;
 
+import android.graphics.Matrix;
 import  android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
+import com.example.proyectofinalplataformas.R;
 import com.example.proyectofinalplataformas.view.MapView;
 
 public class MapFragment extends Fragment {
@@ -16,6 +20,9 @@ public class MapFragment extends Fragment {
     private static final String ARG_PARAM2 = "param2";
     private String mParam1;
     private String mParam2;
+    private ScaleGestureDetector scaleGestureDetector;
+    private Matrix matrix = new Matrix();
+    private float scaleFactor = 1.0f;
 
     public MapFragment() {
     }
@@ -40,6 +47,8 @@ public class MapFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return new MapView(getContext());
+
+
+        return inflater.inflate(R.layout.fragment_map, container, false);
     }
 }

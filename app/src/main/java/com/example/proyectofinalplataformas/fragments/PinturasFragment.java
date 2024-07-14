@@ -84,8 +84,25 @@ public class PinturasFragment extends Fragment {
     }
 
     private void llenarLista() {
-        listaPinturas.add(new PinturasVo("Recila Papel","Av. Independencia 1732, Arequipa 01007",R.drawable.av_independencia_papel));
-       listaPinturas.add(new PinturasVo("Multiservicos Precisur","Av. Andrés Avelino Cáceres. C.C. Volcán Center Piso 1, Oficina 109, Mz F Lt. 6. JLBR. AREQUIPA, PERÚ. ",R.drawable.multiservicios_precisur_logo));
+        if (nombreFragment.equals("Papel y carton")) {
+            listaPinturas.add(new PinturasVo("Recila Papel", "Av. Independencia 1732, Arequipa 01007", R.drawable.av_independencia_papel));
+            listaPinturas.add(new PinturasVo("Kimsaplora", "Asoc. Francisco Garcia Calderón MZ. W-1 LT. 1 ZN. 1", R.drawable.kimsaplora));
+        } else if (nombreFragment.equals("Plasticos")) {
+            listaPinturas.add(new PinturasVo("Multiservicos Precisur","Av. Andrés Avelino Cáceres. C.C. Volcán Center Piso 1, Oficina 109, Mz F Lt. 6. JLBR. AREQUIPA, PERÚ. ",R.drawable.multiservicios_precisur_logo));
+        } else if (nombreFragment.equals("Vidrio")) {
+            listaPinturas.add(new PinturasVo("Reci ayuda Arequipa","Asent.H. Las Malvinas Mz. M Lt. 2. Distrito de Cayma, Arequipa",R.drawable.reciayuda_arequipa_logo_1));
+        } else if (nombreFragment.equals("Metales")) {
+            listaPinturas.add(new PinturasVo("Reci ayuda Arequipa","Asent.H. Las Malvinas Mz. M Lt. 2. Distrito de Cayma, Arequipa",R.drawable.reciayuda_arequipa_logo_1));
+        } else if (nombreFragment.equals("Madera")) {
+            listaPinturas.add(new PinturasVo("Plantum","Urb. Campiña Dorada A-11 Cercado - Arequipa",R.drawable.plantum));
+        } else if (nombreFragment.equals("Electronicos")) {
+            listaPinturas.add(new PinturasVo("Recolecc","Calle antiquilla 143, Yanahuara",R.drawable.recolecc));
+        } else if (nombreFragment.equals("Baterias")) {
+            listaPinturas.add(new PinturasVo("Reci ayuda Arequipa","Asent.H. Las Malvinas Mz. M Lt. 2. Distrito de Cayma, Arequipa",R.drawable.reciayuda_arequipa_logo_1));
+
+        }
+
+
 //        listaPinturas.add(new PinturasVo("La ultima cena","Feorella",R.drawable.tres));
 //        listaPinturas.add(new PinturasVo("La gran ola","Raulin",R.drawable.cuatro));
 //        listaPinturas.add(new PinturasVo("Guernica","Aluyis",R.drawable.cinco));

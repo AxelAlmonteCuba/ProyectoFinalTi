@@ -11,15 +11,18 @@
         android:layout_height="650dp"
         android:background="#000000">
 
-        <TextView
-            android:id="@+id/txtSelector"
+        <ImageView
+            android:id="@+id/mapaReciclaje"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Selecciona una Galería"
-            android:textSize="18sp"
+            android:layout_marginTop="79dp"
+            android:layout_marginBottom="182dp"
+            android:src="@drawable/mapa_de_recicvlaje"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
