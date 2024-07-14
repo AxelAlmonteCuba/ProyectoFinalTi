@@ -84,14 +84,14 @@ public class PinturasFragment extends Fragment {
     }
 
     private void llenarLista() {
-        listaPinturas.add(new PinturasVo("Mona Lisa","Davinci",R.drawable.uno));
-        listaPinturas.add(new PinturasVo("Noche estrellada","Axelito",R.drawable.dos));
-        listaPinturas.add(new PinturasVo("La ultima cena","Feorella",R.drawable.tres));
-        listaPinturas.add(new PinturasVo("La gran ola","Raulin",R.drawable.cuatro));
-        listaPinturas.add(new PinturasVo("Guernica","Aluyis",R.drawable.cinco));
-        listaPinturas.add(new PinturasVo("La ultima cena","El orejas",R.drawable.seis));
-        listaPinturas.add(new PinturasVo("Joven de la perla","Miguel Angel",R.drawable.siete));
-        listaPinturas.add(new PinturasVo("Nacimiento de Venus","Alguien",R.drawable.ocho));
+        listaPinturas.add(new PinturasVo("Recila Papel","Av. Independencia 1732, Arequipa 01007",R.drawable.av_independencia_papel));
+       listaPinturas.add(new PinturasVo("Multiservicos Precisur","Av. Andrés Avelino Cáceres. C.C. Volcán Center Piso 1, Oficina 109, Mz F Lt. 6. JLBR. AREQUIPA, PERÚ. ",R.drawable.multiservicios_precisur_logo));
+//        listaPinturas.add(new PinturasVo("La ultima cena","Feorella",R.drawable.tres));
+//        listaPinturas.add(new PinturasVo("La gran ola","Raulin",R.drawable.cuatro));
+//        listaPinturas.add(new PinturasVo("Guernica","Aluyis",R.drawable.cinco));
+//        listaPinturas.add(new PinturasVo("La ultima cena","El orejas",R.drawable.seis));
+//        listaPinturas.add(new PinturasVo("Joven de la perla","Miguel Angel",R.drawable.siete));
+//        listaPinturas.add(new PinturasVo("Nacimiento de Venus","Alguien",R.drawable.ocho));
 
     }
 }
