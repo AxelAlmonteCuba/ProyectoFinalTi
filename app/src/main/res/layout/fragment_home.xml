@@ -8,128 +8,140 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@android:color/black">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <!-- Imagen de bienvenida -->
+
+            <!-- Texto de bienvenida con usuario -->
+
+            <!-- Mensaje adicional -->
+
+            <!-- Texto zonas de reciclaje en Arequipa resaltado -->
+
+            <ImageView
+                android:id="@+id/imgPinturaDescr"
+                android:layout_width="83dp"
+                android:layout_height="79dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/baseline_account_circle_24" />
+
+            <TextView
+                android:id="@+id/txtNamehome"
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:text="Bienvenido user\n a la app de"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="ZONAS DE RECICLAJE EN AREQUIPA"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtMessagehome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Gracias por contribuir al cuidado del medio ambiente."
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <!-- Bloque blanco con materiales reciclables -->
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#000000">
+                android:layout_height="175dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="16dp">
 
-                <ImageView
-                    android:id="@+id/imgPinturaDescr"
-                    android:layout_width="162dp"
-                    android:layout_height="166dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/baseline_account_circle_24"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/txtNamehome"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="Bienvenido user al "
-                    android:textColor="@color/white"
-                    android:textSize="22dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imgPinturaDescr" />
-
+                <!-- Texto materiales reciclables -->
                 <TextView
                     android:id="@+id/textView15"
-                    android:layout_width="369dp"
-                    android:layout_height="52dp"
-                    android:layout_marginTop="30dp"
-                    android:background="@color/white"
-                    android:text="DESTACADOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Materiales que puedes reciclar"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="35dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
-                <LinearLayout
-                    android:id="@+id/LayouDestacados"
-                    android:layout_width="397dp"
-                    android:layout_height="143dp"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView15">
+                <!-- Layout de materiales reciclables -->
+                <GridLayout
+                    android:id="@+id/gridLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="3"
+                    android:columnOrderPreserved="false"
+                    android:gravity="center"
+                    android:padding="8dp">
 
+                    <!-- Imagenes de materiales reciclables -->
                     <ImageView
                         android:id="@+id/imageView8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@drawable/monalisa" />
+                        android:layout_width="9dp"
+                        android:layout_height="68dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/papel" />
 
                     <ImageView
                         android:id="@+id/imageView9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@drawable/unica" />
+                        android:layout_width="5dp"
+                        android:layout_height="63dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/plastico" />
 
                     <ImageView
                         android:id="@+id/imgMasDestacados"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@drawable/more" />
+                        android:layout_width="3dp"
+                        android:layout_height="55dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/metal" />
+                </GridLayout>
+            </LinearLayout>
 
-                </LinearLayout>
+            <!-- Información importante adicional -->
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Recuerda separar tus residuos correctamente"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:gravity="center" />
 
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginTop="20dp"
-                    android:text="Centro Cultural UNSA"
-                    android:textColor="@color/white"
-                    android:textSize="27dp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtNamehome" />
-
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="Horarios"
-                    android:textColor="@color/white"
-                    android:textSize="27dp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-                <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:gravity="start"
-                    android:text="Lunes - Viernes  8 am - 8:15 pm\nSabado  9:39 am - 4:15 pm\nDomingo :  Cerrado
-        "
-                    android:textColor="@color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 

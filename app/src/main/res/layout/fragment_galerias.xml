@@ -5,199 +5,223 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".fragments.GaleriasFragment" >
+    tools:context=".fragments.GaleriasFragment">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_height="wrap_content">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <!-- Papel y Cartón -->
+            <ImageView
+                android:id="@+id/imgGaleria1"
+                android:layout_width="145dp"
+                android:layout_height="144dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/papel"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@+id/imgGaleria2"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.45"
+                app:srcCompat="@drawable/papel" />
 
-                <LinearLayout
-                    android:layout_width="428dp"
-                    android:layout_height="877dp"
-                    android:orientation="vertical"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Papel y Cartón"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/imgGaleria1"
+                app:layout_constraintStart_toStartOf="@id/imgGaleria1"
+                app:layout_constraintEnd_toEndOf="@id/imgGaleria1"
+                app:layout_constraintHorizontal_bias="0.5" />
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+            <!-- Plásticos -->
+            <ImageView
+                android:id="@+id/imgGaleria2"
+                android:layout_width="146dp"
+                android:layout_height="144dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/plastico"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintStart_toEndOf="@+id/imgGaleria1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.45"
+                app:srcCompat="@drawable/plastico" />
 
-                        <ImageView
-                            android:id="@+id/imgGaleria1"
-                            android:layout_width="134dp"
-                            android:layout_height="154dp"
-                            android:layout_marginStart="40dp"
-                            android:layout_marginTop="40dp"
-                            android:src="@drawable/unica"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Plásticos"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/imgGaleria2"
+                app:layout_constraintStart_toStartOf="@id/imgGaleria2"
+                app:layout_constraintEnd_toEndOf="@id/imgGaleria2"
+                app:layout_constraintHorizontal_bias="0.5" />
 
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="71dp"
-                            android:layout_marginTop="20dp"
-                            android:text="Galeria I"
-                            android:textColor="@color/white"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imgGaleria1" />
+            <!-- Vidrio -->
 
-                        <ImageView
-                            android:id="@+id/imgGaleria2"
-                            android:layout_width="134dp"
-                            android:layout_height="154dp"
-                            android:layout_marginStart="50dp"
-                            android:layout_marginTop="40dp"
-                            android:layout_marginEnd="40dp"
-                            android:src="@drawable/monalisa"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/imgGaleria1"
-                            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imgGaleria3"
+                android:layout_width="145dp"
+                android:layout_height="146dp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/vidrios"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@+id/imgGaleria4"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView3"
+                app:layout_constraintWidth_percent="0.45"
+                app:srcCompat="@drawable/vidrios" />
 
-                        <TextView
-                            android:id="@+id/textView8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:text="Galeria II"
-                            android:textColor="@color/white"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.645"
-                            app:layout_constraintStart_toEndOf="@+id/textView3"
-                            app:layout_constraintTop_toBottomOf="@+id/imgGaleria2" />
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Vidrio"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/imgGaleria3"
+                app:layout_constraintStart_toStartOf="@id/imgGaleria3"
+                app:layout_constraintEnd_toEndOf="@id/imgGaleria3"
+                app:layout_constraintHorizontal_bias="0.5" />
 
-                        <ImageView
-                            android:id="@+id/imgGaleria3"
-                            android:layout_width="134dp"
-                            android:layout_height="154dp"
-                            android:layout_marginStart="40dp"
-                            android:layout_marginTop="40dp"
-                            android:src="@drawable/galeria_i"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            <!-- Metales -->
+            <ImageView
+                android:id="@+id/imgGaleria4"
+                android:layout_width="146dp"
+                android:layout_height="146dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/metal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintStart_toEndOf="@+id/imgGaleria3"
+                app:layout_constraintTop_toBottomOf="@id/textView8"
+                app:layout_constraintWidth_percent="0.45"
+                app:srcCompat="@drawable/metal" />
 
-                        <ImageView
-                            android:id="@+id/imgGaleria4"
-                            android:layout_width="134dp"
-                            android:layout_height="154dp"
-                            android:layout_marginTop="40dp"
-                            android:layout_marginEnd="40dp"
-                            android:src="@drawable/galeria_ii"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.904"
-                            app:layout_constraintStart_toEndOf="@+id/imgGaleria3"
-                            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Metales"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/imgGaleria4"
+                app:layout_constraintStart_toStartOf="@id/imgGaleria4"
+                app:layout_constraintEnd_toEndOf="@id/imgGaleria4"
+                app:layout_constraintHorizontal_bias="0.5" />
 
-                        <TextView
-                            android:id="@+id/textView19"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="71dp"
-                            android:layout_marginTop="20dp"
-                            android:text="Galeria III"
-                            android:textColor="@color/white"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imgGaleria3" />
+            <!-- Madera -->
 
-                        <TextView
-                            android:id="@+id/textView20"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:text="Galeria IV"
-                            android:textColor="@color/white"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.625"
-                            app:layout_constraintStart_toEndOf="@+id/textView19"
-                            app:layout_constraintTop_toBottomOf="@+id/imgGaleria4" />
+            <ImageView
+                android:id="@+id/imgGaleria5"
+                android:layout_width="146dp"
+                android:layout_height="147dp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/madera"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@+id/imgGaleria6"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView19"
+                app:layout_constraintWidth_percent="0.45"
+                app:srcCompat="@drawable/madera" />
 
-                        <ImageView
-                            android:id="@+id/imgGaleria5"
-                            android:layout_width="134dp"
-                            android:layout_height="154dp"
-                            android:layout_marginStart="40dp"
-                            android:layout_marginTop="40dp"
-                            android:src="@drawable/galeria_iii"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Madera"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/imgGaleria5"
+                app:layout_constraintStart_toStartOf="@id/imgGaleria5"
+                app:layout_constraintEnd_toEndOf="@id/imgGaleria5"
+                app:layout_constraintHorizontal_bias="0.5" />
 
-                        <TextView
-                            android:id="@+id/textView21"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="71dp"
-                            android:layout_marginTop="20dp"
-                            android:text="Galeria V"
-                            android:textColor="@color/white"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imgGaleria5" />
+            <!-- Electrónicos -->
+            <ImageView
+                android:id="@+id/imgGaleria6"
+                android:layout_width="148dp"
+                android:layout_height="147dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/electronicos"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintStart_toEndOf="@+id/imgGaleria5"
+                app:layout_constraintTop_toBottomOf="@id/textView20"
+                app:layout_constraintWidth_percent="0.45"
+                app:srcCompat="@drawable/electronicos" />
 
-                        <ImageView
-                            android:id="@+id/imgGaleria6"
-                            android:layout_width="134dp"
-                            android:layout_height="154dp"
-                            android:layout_marginTop="40dp"
-                            android:layout_marginEnd="40dp"
-                            android:src="@drawable/galeria_vi"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.931"
-                            app:layout_constraintStart_toEndOf="@+id/imgGaleria5"
-                            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Electrónicos"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/imgGaleria6"
+                app:layout_constraintStart_toStartOf="@id/imgGaleria6"
+                app:layout_constraintEnd_toEndOf="@id/imgGaleria6"
+                app:layout_constraintHorizontal_bias="0.5" />
 
-                        <TextView
-                            android:id="@+id/textView22"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:text="Galeria VI"
-                            android:textColor="@color/white"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.625"
-                            app:layout_constraintStart_toEndOf="@+id/textView21"
-                            app:layout_constraintTop_toBottomOf="@+id/imgGaleria6" />
+            <!-- Baterías -->
+            <ImageView
+                android:id="@+id/imgGaleria7"
+                android:layout_width="147dp"
+                android:layout_height="146dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/bateria"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@+id/imgGaleria8"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView21"
+                app:layout_constraintWidth_percent="0.45"
+                app:srcCompat="@drawable/bateria" />
 
-                        <ImageView
-                            android:id="@+id/imgGaleria7"
-                            android:layout_width="138dp"
-                            android:layout_height="96dp"
-                            android:layout_marginTop="40dp"
-                            android:src="@drawable/galeriavii"
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Baterías"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/imgGaleria7"
+                app:layout_constraintStart_toStartOf="@id/imgGaleria7"
+                app:layout_constraintEnd_toEndOf="@id/imgGaleria7"
+                app:layout_constraintHorizontal_bias="0.5" />
 
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.137"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+            <!-- Para mantener la simetría -->
+            <View
+                android:id="@+id/imgGaleria8"
+                android:layout_width="146dp"
+                android:layout_height="152dp"
+                android:layout_margin="8dp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintStart_toEndOf="@+id/imgGaleria7"
+                app:layout_constraintTop_toBottomOf="@id/textView22"
+                app:layout_constraintWidth_percent="0.45" />
 
-                        <TextView
-                            android:id="@+id/textView23"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="71dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="302dp"
-                            android:text="Galeria VII"
-                            android:textColor="@color/white"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imgGaleria7" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </LinearLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
 </FrameLayout>
