@@ -20,7 +20,6 @@ import com.example.proyectofinalplataformas.fragments.FavoritosFragment;
 import com.example.proyectofinalplataformas.fragments.GaleriasFragment;
 import com.example.proyectofinalplataformas.fragments.HomeFragment;
 import com.example.proyectofinalplataformas.fragments.MapFragment;
-import com.example.proyectofinalplataformas.fragments.PinturasFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -60,9 +59,9 @@ public class HomeActivity extends AppCompatActivity {
             finish(); // Finaliza
         });
         String nombre = getIntent().getStringExtra("nombres");
-        bottomNavigationView.setOnItemReselectedListener(new NavigationBarView.OnItemReselectedListener() {
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public void onNavigationItemReselected(@NonNull MenuItem menuItem) {
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 if(menuItem.getItemId() == R.id.menu_home){
                     txtTitle.setText("Home");
                     homeFragment = HomeFragment.newInstance(nombre);
@@ -80,6 +79,7 @@ public class HomeActivity extends AppCompatActivity {
                     favoritosFragment = FavoritosFragment.newInstance("","");
                     LoadFragment(favoritosFragment);
                 }
+                return true;
             }
         });
     }

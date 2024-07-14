@@ -90,14 +90,9 @@ public class FavoritosFragment extends Fragment {
 
     private void llenarLista() {
 
-        listaFavoritos.add(new FavoritosVo("La Gioconda","Davinci",R.drawable.uno,R.drawable.baseline_favorite_24));
-        listaFavoritos.add(new FavoritosVo("Noche estrellada","Axelito",R.drawable.dos,R.drawable.baseline_favorite_24));
-        listaFavoritos.add(new FavoritosVo("La ultima cena","Feorella",R.drawable.tres,R.drawable.baseline_favorite_24));
-        listaFavoritos.add(new FavoritosVo("La gran ola","Raulin",R.drawable.cuatro,R.drawable.baseline_favorite_24));
-        listaFavoritos.add(new FavoritosVo("Guernica","Aluyis",R.drawable.cinco,R.drawable.baseline_favorite_24));
-        listaFavoritos.add(new FavoritosVo("La ultima cena","El orejas",R.drawable.seis,R.drawable.baseline_favorite_24));
-        listaFavoritos.add(new FavoritosVo("Joven de la perla","Miguel Angel",R.drawable.siete,R.drawable.baseline_favorite_24));
-        listaFavoritos.add(new FavoritosVo("Nacimiento de Venus","Alguien",R.drawable.ocho,R.drawable.baseline_favorite_24));
+        listaFavoritos.add(new FavoritosVo("Recila Papel","Av. Independencia 1732, Arequipa 01007",R.drawable.av_independencia_papel,R.drawable.baseline_favorite_24));
+
+
 
     }
 }
